@@ -1,4 +1,12 @@
 AdminOpenwolf::Application.routes.draw do
+
+  devise_for :usuarios
+
+  devise_scope :usuario do
+    get "/login" => "devise/sessions#new", :as => "login"
+    get "/logout" => "devise/sessions#destroy", :as => "logout"
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +56,7 @@ AdminOpenwolf::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 

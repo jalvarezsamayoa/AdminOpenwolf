@@ -7,6 +7,37 @@ gem 'rails', '3.2.9'
 
 gem 'pg'
 
+# Servidor
+gem 'thin'
+
+# AUTENTICACION
+gem 'devise' # libreria de autenticacion
+gem 'cancan' #libreria manejo de accesos a recursos
+gem 'rolify' #genera control de roles
+
+
+# Active Record
+gem 'awesome_nested_set'
+
+# HELPERS
+gem 'haml' # sistema para generacion de templates
+gem 'haml-rails'
+
+
+# Controllers
+gem 'inherited_resources' #encapsula operaciones basicas para controladores
+
+
+# VIEWS
+gem "simple_form"
+gem 'kaminari' # pagineo de resultados
+gem 'jquery-rails' #jquery para rails, remplaza prototype y scriptaculous
+gem 'paperclip' # modulo para hacer upload a archivos
+gem "crummy", "~> 1.6.0" # manejo de breadcrumbs
+
+
+# MONITOREO
+#gem 'airbrake' #notificacion de errores via http://hoptoadapp.com/
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,10 +49,43 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
+  gem 'twitter-bootstrap-rails',  :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 end
 
-gem 'jquery-rails'
 
+
+group :development, :test do
+  gem 'faker' # herramienta para generacion de datos de prueba
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
+
+  gem 'guard'
+  gem 'guard-livereload'
+  gem 'guard-bundler'
+  gem 'guard-rails'
+  gem 'guard-rspec'
+
+  gem 'quiet_assets'
+end
+
+
+# TESTING
+group  :test do
+
+  gem "rspec-rails",        :git => "git://github.com/rspec/rspec-rails.git"
+  gem "rspec",              :git => "git://github.com/rspec/rspec.git"
+  gem "rspec-core",         :git => "git://github.com/rspec/rspec-core.git"
+  gem "rspec-expectations", :git => "git://github.com/rspec/rspec-expectations.git"
+  gem "rspec-mocks",        :git => "git://github.com/rspec/rspec-mocks.git"
+
+
+  gem "capybara"
+  gem "factory_girl_rails", "~> 4.0"
+  gem "launchy"
+
+  gem 'rb-inotify'
+  gem 'libnotify'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
