@@ -1,0 +1,16 @@
+es:
+  devise:
+    sessions:
+      sign_in: "Ingreso de credenciales"
+      submit: "Ingresar"
+      email: "Correo electrónico"
+      password: "Contraseña"
+    shared:
+      sign_in: "Ingresar"
+      sign_up: "Registrarse"
+      forgot_password: "¿Olvido su contraseña?"
+      confirmation_instructions: "¿No recibio las intrucciones para confirmar su cuenta?"
+      unlock_instructions: "¿No recibio las instrucciones para desbloquear su cuenta?"
+  navigation:
+    logout: "Cerrar Sesión"
+    profile: "Actualizar Perfil"

@@ -36,6 +36,13 @@ gem 'paperclip' # modulo para hacer upload a archivos
 gem "crummy", "~> 1.6.0" # manejo de breadcrumbs
 
 
+# Twitter Bootstrap
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'twitter-bootstrap-rails',  :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'libv8', '~> 3.11.8'
+
+
 # MONITOREO
 #gem 'airbrake' #notificacion de errores via http://hoptoadapp.com/
 
@@ -50,9 +57,8 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 
-  gem 'twitter-bootstrap-rails',  :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-end
 
+end
 
 
 group :development, :test do

@@ -1,0 +1,42 @@
+//index.html.haml
+.row-fluid
+  .box.span12
+    .box-header
+      %h2
+        %i.icon-align-justify
+        %span.break
+        Usuarios
+    .box-content
+      .row-fluid
+        .span3
+          = link_to new_usuario_path, :class => "btn btn-small btn-success" do
+            %i.icon-plus
+            = "Nuevo Registro"
+        .span9
+          .dataTables_filter.pull-right
+            %label
+              Buscar:
+              %input{"aria-controls" => "DataTables_Table_0", :type => "text"}/
+      %table.table.table-striped
+        %thead
+          %tr
+            %th= 'Id'
+            %th= Usuario.human_attribute_name(:email)
+            %th= Usuario.human_attribute_name(:nombre)
+            %th= Usuario.human_attribute_name(:cargo)
+            %th= Usuario.human_attribute_name(:institucion_id)
+            %th= Usuario.human_attribute_name(:activo)
+            %th Acciones
+        %tbody
+          - for usuario in @usuarios  do
+            %tr{:class => "#{ 'inactive' unless usuario.activo? }"}
+              %td= usuario.id
+              %td= usuario.email
+              %td= usuario.nombre
+              %td= usuario.cargo
+              %td= usuario.institucion.nombre
+              %td= si_no(usuario.activo)
+              %td.center.actions
+                %a.btn.btn-success{:href => "#"}
+                  %i.icon-zoom-in.icon-white
+      = paginate @usuarios

@@ -1,11 +1,48 @@
 AdminOpenwolf::Application.routes.draw do
 
-  devise_for :usuarios
+  devise_for :usuarios, :path => "auth"
 
   devise_scope :usuario do
     get "/login" => "devise/sessions#new", :as => "login"
     get "/logout" => "devise/sessions#destroy", :as => "logout"
   end
+
+
+  resources :usuarios
+  resources :roles
+
+  #general
+  resources :instituciones
+  resources :municipios
+  resources :departamentos
+
+  #laip
+  resources :feriados
+  resources :idiomas
+  resources :razonestiposresoluciones
+  resources :estados
+  resources :vias
+  resources :tiposresoluciones
+  resources :rangosedad
+  resources :profesiones
+  resources :fuentes
+
+  #archivo
+  resources :archivos
+  resources :documentocategorias
+  resources :documentoclasificaciones
+  resources :clasificaciones
+  resources :tipomensajes
+
+  #herramientas
+  resources :importar do
+    member do
+      get :status
+    end
+  end
+
+  match 'perfil', :to => "admin::usuarios#perfil", :as => "perfil"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

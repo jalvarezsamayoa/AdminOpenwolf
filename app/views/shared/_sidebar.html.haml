@@ -1,0 +1,10 @@
+/ _sidebar.html.haml
+.span2.main-menu-span
+  .nav-collapse.sidebar-nav
+    %ul.nav.nav-tabs.nav-stacked.main-menu
+      = menu_item("Inicio", root_path, "Página Inicial.", 'icon-home', true)
+      = menu_item("Usuarios", usuarios_path, "Administracion de Usuarios.", 'icon-user')
+      = menu_item("Instituciones", instituciones_path, "Administacion de Instituciones" )
+      = menu_item("Vias de Solicitud", vias_path, "Administracion de Vias de Solicitud")
+      = menu_item("Departamentos", departamentos_path, "Administracion de Departamentos Republica")
+      = menu_item("Municpios", municipios_path, "Administracion de Municipios Republica")

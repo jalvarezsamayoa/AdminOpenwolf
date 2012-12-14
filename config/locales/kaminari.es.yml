@@ -1,0 +1,9 @@
+# kaminari.es.yml
+es:
+  views:
+    pagination:
+      first: "&laquo; Primero"
+      last: "Ultimo &raquo;"
+      previous: "&lsaquo; Anterior"
+      next: "Próximo &rsaquo;"
+      truncate: "..."

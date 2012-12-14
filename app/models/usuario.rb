@@ -8,10 +8,10 @@ class Usuario < ActiveRecord::Base
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable, :lockable and :timeoutable
-  devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable, :token_authenticatable, :lockable, :timeoutable
+  devise :database_authenticatable, :recoverable, :trackable, :validatable, :token_authenticatable, :lockable, :timeoutable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, \
+  attr_accessible :email, :password, :password_confirmation,  \
   :nombre, :cargo, :departamento_id, :areadocumento_id, :puesto_id, \
   :institucion_id, :essupervisorarea, :username, :role_ids, :login, :activo
 

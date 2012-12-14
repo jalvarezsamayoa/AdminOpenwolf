@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %title AdminOpenwolf
+    / start: Mobile Specific
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+      / end: Mobile Specific
+      = stylesheet_link_tag    "application", :media => "all"
+      / The HTML5 shim, for IE6-8 support of HTML5 elements
+      /[if lt IE 9]
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  %body{default_body_attributes}
+    = render :partial => "shared/top_navigation_bar"
+    = render :partial => "shared/alert_messages"
+    .container-fluid
+      .row-fluid
+        = render :partial => "shared/sidebar"
+        #content.span10
+          = render :partial => "shared/breadcrumbs"
+          = yield
+    = javascript_include_tag "application"
+    = csrf_meta_tags
