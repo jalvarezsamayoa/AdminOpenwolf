@@ -1,0 +1,18 @@
+/ _index.html.haml
+.row-fluid
+  .box.span12
+    .box-header
+      %h2
+        %i.icon-align-justify
+        %span.break
+        = title
+    .box-content
+      .row-fluid
+        .span2
+          = link_to new_item_url, :class => "btn btn-small btn-success" do
+            %i.icon-plus
+            = "Nuevo Registro"
+        .span10
+          .search-form.pull-right
+            = yield :form_filter
+      = yield

@@ -1,0 +1,37 @@
+/ show.html.haml
+.row-fluid
+  .box.span12
+    .box-header
+      %h2
+        %i.icon-info-sign
+        %span.break
+        Usuario
+    .box-content
+      .row-fluid
+        .span12.toolbar
+          = button_new(new_usuario_path)
+          = button_edit(edit_usuario_path(@usuario))
+          = button_delete(usuario_path(@usuario))
+          = button_cancel(usuarios_path)
+      %table.table.table-bordered
+        %tr
+          %th= Usuario.human_attribute_name(:nombre)
+          %td= @usuario.nombre
+        %tr
+          %th= Usuario.human_attribute_name(:username)
+          %td= @usuario.username
+        %tr
+          %th= Usuario.human_attribute_name(:email)
+          %td= @usuario.email
+        %tr
+          %th= Usuario.human_attribute_name(:institucion_id)
+          %td= @usuario.institucion.nombre
+        %tr
+          %th= Usuario.human_attribute_name(:cargo)
+          %td= @usuario.cargo
+        %tr
+          %th= Usuario.human_attribute_name(:roles)
+          %td
+            %ul
+              - @usuario.roles.each do |role|
+                %li= role.name

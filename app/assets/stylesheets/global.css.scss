@@ -2,3 +2,36 @@
 .breadcrumb {
   margin-top: 0px;
 }
+
+tr.inactive {
+  text-decoration: line-through;
+  color: gray;
+  a { color: gray; }
+}
+
+table {
+  tbody {
+    font-size: 12px;
+  }
+}
+
+.simple_form {
+  input[type=text],
+  input[type=email],
+  select,
+  {
+    width: 350px;
+  }
+}
+
+.toolbar {
+  margin-bottom: 9px;
+}
+
+.search-form {
+  input,
+  select,
+  {
+    width: 150px;
+  } 
+}

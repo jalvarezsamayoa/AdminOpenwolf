@@ -1,17 +1,8 @@
-class Role < ActiveRecord::Base
-  attr_accessible :name
-
-  acts_as_authorization_role :join_table_name => "roles_usuarios"
-
-  scope :basicos, :conditions => "name != 'superadmin' and name != 'localadmin' and name != 'ciudadano'"
-
-  validates :name, :uniqueness => true, :presence => true
-
-  scope :name_like, lambda { |nombre|
-    unless nombre.nil? || nombre.empty? || nombre.first.nil?
-      where("roles.name like ?", "%#{nombre}%" )
-    end
-  }
+class Role < ActiveRecord::Base  
+  has_and_belongs_to_many :usuarios, :join_table => :usuarios_roles
+  belongs_to :resource, :polymorphic => true
+  
+  scopify
 end
 
 # == Schema Information
@@ -24,5 +15,7 @@ end
 #  authorizable_id   :integer
 #  created_at        :datetime
 #  updated_at        :datetime
+#  resource_id       :integer
+#  resource_type     :string(255)
 #
 

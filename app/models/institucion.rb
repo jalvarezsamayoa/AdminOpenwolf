@@ -3,7 +3,7 @@ class Institucion < ActiveRecord::Base
 
   attr_accessible :codigo, :unidad_ejecutora, :entidad, :nombre, :abreviatura, \
   :tipoinstitucion_id, :direccion, :telefono, :activa, :usasolicitudesprivadas, \
-  :email, :webpage
+  :email, :webpage, :parent_id, :logo
 
   #versioned
   acts_as_nested_set
@@ -15,8 +15,6 @@ class Institucion < ActiveRecord::Base
   has_many :actividades
   has_many :usuarios
   has_many :solicitudes, :dependent => :destroy
-  has_many :documentos, :dependent => :destroy
-  has_many :archivos, :dependent => :destroy
   has_many :seguimientos, :dependent => :destroy
   has_many :tmp_assets, :dependent => :destroy
 
@@ -36,9 +34,9 @@ class Institucion < ActiveRecord::Base
   #TODO: el email debe de ser unico
   validates :email, :presence => true
 
-  before_validation(:on => :create) do
-    cleanup
-  end
+  # before_validation(:on => :create) do
+  #   cleanup
+  # entidad
 
   #####################
   # Filtros de busqueda
@@ -59,6 +57,10 @@ class Institucion < ActiveRecord::Base
       where("UPPER(instituciones.nombre) like ? or UPPER(instituciones.codigo) like ?", valor, valor )
    end
   }
+
+  def to_label
+    nombre
+  end
 
 
 end

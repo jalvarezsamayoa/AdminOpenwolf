@@ -1,8 +1,5 @@
 class TipomensajesController < ApplicationController
   before_filter :authenticate_usuario!
-  access_control do
-    allow :superadmin
-  end
 
   # GET /tipomensajes
   # GET /tipomensajes.xml

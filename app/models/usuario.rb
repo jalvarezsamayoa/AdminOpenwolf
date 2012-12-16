@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 class Usuario < ActiveRecord::Base
+  # Configura roles de usuario
+  rolify
+
   # configuracion plugin vestal_versions
   # provee log de cambios excepto en los siguientes campos
   # versioned :except => [:password, :last_request_at, :sing_in_count,
@@ -12,26 +15,17 @@ class Usuario < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation,  \
-  :nombre, :cargo, :departamento_id, :areadocumento_id, :puesto_id, \
-  :institucion_id, :essupervisorarea, :username, :role_ids, :login, :activo
+    :nombre, :cargo, :departamento_id, :areadocumento_id, :puesto_id, \
+    :institucion_id, :essupervisorarea, :username, :role_ids, :login, :activo
 
-  # configuracion plugin acl9
-  # agrega funcion usuario.has_role?
-#  acts_as_authorization_subject  :association_name => :roles, :join_table_name => "roles_usuarios"
 
   ############
   # Relaciones
   ############
 
   belongs_to :institucion
-
-  has_and_belongs_to_many :roles, :join_table => "roles_usuarios"
-
   has_many :actividades
   has_many :solicitudes
-  has_many :documentos
-  has_many :documentotraslados
-  has_many :documentostrasladados, :class_name => "Documentotraslado", :foreign_key => "destinatario_id"
 
   ###############
   # Validaciones
@@ -45,16 +39,18 @@ class Usuario < ActiveRecord::Base
 
   before_destroy :puede_borrar?
 
-      #---------------------------------
-      # Callbacks
-      #---------------------------------
+  #---------------------------------
+  # Callbacks
+  #---------------------------------
 
   before_validation(on: :create) do
     cargar_predeterminados
   end
 
+
+  checks_referential_integrity
   def puede_borrar?
-    check_for_children({:actividades => "Actividades", :solicitudes => "Solicitudes", :documentos => "Documentos"})
+    check_for_children({:actividades => "Actividades", :solicitudes => "Solicitudes"})
   end
 
 
@@ -62,7 +58,7 @@ class Usuario < ActiveRecord::Base
   # Filtros
   #################
 
-#  default_scope :include => :institucion, :order => "activo desc, instituciones.nombre asc, usuarios.nombre asc"
+  #  default_scope :include => :institucion, :order => "activo desc, instituciones.nombre asc, usuarios.nombre asc"
 
   scope :udip, :joins => :roles, :conditions => "roles.name = 'userudip' or roles.name = 'superudip'"
   scope :supervisores, :joins => :roles, :conditions => "roles.name = 'superudip'"

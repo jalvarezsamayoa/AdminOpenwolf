@@ -8,15 +8,17 @@
         Usuarios
     .box-content
       .row-fluid
-        .span3
+        .span2
           = link_to new_usuario_path, :class => "btn btn-small btn-success" do
             %i.icon-plus
             = "Nuevo Registro"
-        .span9
-          .dataTables_filter.pull-right
-            %label
-              Buscar:
-              %input{"aria-controls" => "DataTables_Table_0", :type => "text"}/
+        .span10
+          .search-form.pull-right
+            = search_form_for @q, :class => 'form-search' do |f|
+              = f.text_field :nombre_cont, :placeholder => "Nombre Contiene"
+              = f.text_field :email_cont, :placeholder => "Email Contiene"
+              = f.text_field :institucion_nombre_cont, :placeholder => "Institucion Contiene"
+              %button.btn{:type => "submit"} Buscar
       %table.table.table-striped
         %thead
           %tr
@@ -37,6 +39,6 @@
               %td= usuario.institucion.nombre
               %td= si_no(usuario.activo)
               %td.center.actions
-                %a.btn.btn-success{:href => "#"}
+                = link_to(usuario_path(usuario), :class => "btn btn-success") do
                   %i.icon-zoom-in.icon-white
       = paginate @usuarios

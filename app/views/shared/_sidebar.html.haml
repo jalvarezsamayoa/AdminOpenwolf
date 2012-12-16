@@ -2,9 +2,9 @@
 .span2.main-menu-span
   .nav-collapse.sidebar-nav
     %ul.nav.nav-tabs.nav-stacked.main-menu
-      = menu_item("Inicio", root_path, "Página Inicial.", 'icon-home', true)
-      = menu_item("Usuarios", usuarios_path, "Administracion de Usuarios.", 'icon-user')
-      = menu_item("Instituciones", instituciones_path, "Administacion de Instituciones" )
-      = menu_item("Vias de Solicitud", vias_path, "Administracion de Vias de Solicitud")
-      = menu_item("Departamentos", departamentos_path, "Administracion de Departamentos Republica")
-      = menu_item("Municpios", municipios_path, "Administracion de Municipios Republica")
+      = menu_item("Inicio", root_path, "Página Inicial.", 'icon-home', current_page?('home'))
+      = menu_item("Usuarios", usuarios_path, "Administracion de Usuarios.", 'icon-user', current_page?('usuarios'))
+      = menu_item("Instituciones", instituciones_path, "Administacion de Instituciones", nil, current_page?('instituciones'))
+      = menu_item("Vias de Solicitud", vias_path, "Administracion de Vias de Solicitud", nil, current_page?('vias'))
+      = menu_item("Departamentos", departamentos_path, "Administracion de Departamentos Republica", nil, current_page?('departamentos'))
+      = menu_item("Municpios", municipios_path, "Administracion de Municipios Republica", nil, current_page?('municipios'))

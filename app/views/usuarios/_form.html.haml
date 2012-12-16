@@ -1,0 +1,13 @@
+/ _form.html.haml
+= simple_form_for usuario, html: { class: 'form-horizontal'} do |f|
+  = f.input :email
+  = f.input :password
+  = f.input :password_confirmation
+  = f.input :activo, :hint => "Usuario esta activo."
+  = f.input :nombre
+  = f.input :cargo
+  = f.association :institucion, :label_method => :nombre, :include_blank => false
+  = f.association :roles, :as => :select, :collection => Role.all
+  .form-actions
+    = f.button :submit, :class => "btn btn-primary"
+    = link_to "Cancelar", usuarios_path, :class => "btn"

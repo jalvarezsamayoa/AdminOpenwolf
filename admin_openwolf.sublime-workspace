@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"usu",
+				"usuarios_roles"
+			],
+			[
 				"min",
 				"min-width"
 			],
@@ -268,52 +272,67 @@
 	"buffers":
 	[
 		{
+			"file": "app/controllers/instituciones_controller.rb",
+			"settings":
+			{
+				"buffer_size": 390,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/instituciones/index.html.haml",
+			"settings":
+			{
+				"buffer_size": 1240,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/usuarios_controller.rb",
+			"settings":
+			{
+				"buffer_size": 520,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/instituciones/edit.html.haml",
+			"settings":
+			{
+				"buffer_size": 183,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/instituciones/_form.html.haml",
+			"settings":
+			{
+				"buffer_size": 889,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "app/views/usuarios/index.html.haml",
 			"settings":
 			{
-				"buffer_size": 1380,
+				"buffer_size": 1649,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/stylesheets/application.css",
+			"file": "app/views/usuarios/new.html.haml",
 			"settings":
 			{
-				"buffer_size": 640,
+				"buffer_size": 165,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/javier/Projects/OpenWolf/OpenwolfV4/app/views/admin/usuarios/index.html.haml",
+			"file": "app/views/shared/_index.html.haml",
 			"settings":
 			{
-				"buffer_size": 1007,
+				"buffer_size": 604,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/javier/Projects/OpenWolf/OpenwolfV4/app/helpers/application_helper.rb",
-			"settings":
-			{
-				"buffer_size": 7151,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/application.html.haml",
-			"settings":
-			{
-				"buffer_size": 784,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/usuarios.css.scss",
-			"settings":
-			{
-				"buffer_size": 91,
-				"line_ending": "Unix",
-				"name": "usuarios.css.scss"
 			}
 		}
 	],
@@ -324,12 +343,44 @@
 		"selected_items":
 		[
 			[
-				"be",
-				"BeautifyRuby"
+				"dele",
+				"Trailing Spaces: Delete Trailing Spaces"
 			],
 			[
 				"rein",
 				"Indentation: Reindent Lines"
+			],
+			[
+				"be",
+				"BeautifyRuby"
+			],
+			[
+				"b",
+				"BeautifyRuby"
+			],
+			[
+				"beu",
+				"BeautifyRuby"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"setham",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packain",
+				"Package Control: Install Package"
 			],
 			[
 				"trai",
@@ -346,10 +397,6 @@
 			[
 				"haml",
 				"Set Syntax: Ruby Haml"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"packin",
@@ -400,10 +447,6 @@
 				"Snippet: jquery-document-ready"
 			],
 			[
-				"b",
-				"BeautifyRuby"
-			],
-			[
 				"Snippet: div",
 				"Snippet: div"
 			],
@@ -422,10 +465,6 @@
 			[
 				"rei",
 				"Indentation: Reindent Lines"
-			],
-			[
-				"dele",
-				"Trailing Spaces: Delete Trailing Spaces"
 			],
 			[
 				"delete",
@@ -454,10 +493,6 @@
 			[
 				"REIN",
 				"Indentation: Reindent Lines"
-			],
-			[
-				"beu",
-				"BeautifyRuby"
 			],
 			[
 				"install",
@@ -504,7 +539,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 593.0
+		"width": 530.0
 	},
 	"console":
 	{
@@ -521,11 +556,62 @@
 	},
 	"file_history":
 	[
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/usuarios/_form.html.haml",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/assets/stylesheets/global.css.scss",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/locales/es.yml",
+		"/home/javier/Projects/OpenWolf/OpenwolfV4/config/locales/en.yml",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/assets/stylesheets/usuarios.css.scss",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/shared/_index.html.haml",
+		"/home/javier/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/db/migrate/20121215062024_drop_roles_usuarios_table.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/routes.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/models/institucion.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/layouts/application.html.haml",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/shared/_alert_messages.html.haml",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/controllers/usuarios_controller.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/usuarios/index.html.haml",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/models/usuario.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/models/departamento.rb",
+		"/home/javier/Projects/OpenWolf/OpenwolfV4/app/assets/stylesheets/general.css.scss",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/db/migrate/20121215060623_move_roles_info.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/usuarios/edit.html.haml",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/shared/_top_navigation_bar.html.haml",
+		"/home/javier/Projects/OpenWolf/OpenwolfV4/app/controllers/admin/usuarios_controller.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/usuarios/new.html.haml",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/lib/openwolf/referential_integrity.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/lib/openwolf/openwolf/core/institucion.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/controllers/tipomensajes_controller.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/models/solicitud.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/models/actividad.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/models/fuente.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/lib/openwolf/openwolf.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/lib/openwolf/openwolf/laip/actividad.rb",
+		"/home/javier/Projects/OpenWolf/OpenwolfV4/lib/openwolf/openwolf.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/initializers/openwolf.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/application.rb",
+		"/home/javier/Projects/OpenWolf/OpenwolfV4/config/application.rb",
+		"/home/javier/Projects/OpenWolf/OpenwolfV4/app/views/admin/usuarios/show.html.haml",
+		"/home/javier/Projects/OpenWolf/OpenwolfV4/app/views/admin/usuarios/index.html.haml",
+		"/home/javier/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/javier/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/javier/Projects/OpenWolf/OpenwolfV4/app/views/admin/usuarios/_form.html.haml",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/shared/_form.haml",
+		"/home/javier/Projects/OpenWolf/OpenwolfV4/app/views/shared/_menuitem.html.haml",
+		"/home/javier/Projects/OpenWolf/OpenwolfV4/app/views/shared/_mainmenu.html.haml",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/helpers/buttons_helper.rb",
+		"/home/javier/Projects/OpenWolf/OpenwolfV4/app/helpers/application_helper.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/usuarios/show.html.haml",
+		"/home/javier/.config/sublime-text-2/Packages/User/Ruby.sublime-settings",
+		"/home/javier/.config/sublime-text-2/Packages/User/Ruby Haml.sublime-settings",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/db/migrate/20121215055927_rolify_create_roles.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/models/role.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/assets/stylesheets/application.css",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/shared/_sidebar.html.haml",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/helpers/application_helper.rb",
+		"/home/javier/Projects/OpenWolf/AdminOpenwolf/Gemfile",
+		"/home/javier/.config/sublime-text-2/Packages/User/SCSS.sublime-settings",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/controllers/application_controller.rb",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/shared/_breadcrumbs.html.haml",
-		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/usuarios/index.html.haml",
-		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/helpers/application_helper.rb",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/initializers/kaminari_config.rb",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/locales/kaminari.es.yml",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/kaminari/_page.html.haml",
@@ -533,7 +619,6 @@
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/vendor/assets/stylesheets/style.css",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/devise/shared/_links.erb",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/lib/tasks/passwords.rake",
-		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/shared/_alert_messages.html.haml",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/layouts/application.html.erb",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/controllers/archivos_controller.rb",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/controllers/clasificaciones_controller.rb",
@@ -552,15 +637,7 @@
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/controllers/roles_controller.rb",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/controllers/tiposresoluciones_controller.rb",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/controllers/vias_controller.rb",
-		"/home/javier/Projects/OpenWolf/AdminOpenwolf/Gemfile",
-		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/shared/_sidebar.html.haml",
-		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/routes.rb",
-		"/home/javier/Projects/OpenWolf/OpenwolfV4/app/views/shared/_mainmenu.html.haml",
 		"/home/javier/Projects/OpenWolf/OpenwolfV4/config/routes.rb",
-		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/assets/stylesheets/global.css.scss",
-		"/home/javier/Projects/OpenWolf/OpenwolfV4/app/helpers/application_helper.rb",
-		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/shared/_top_navigation_bar.html.haml",
-		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/assets/stylesheets/application.css",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/locales/views/defaults/es.yml",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/layouts/devise.html.erb",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/devise/sessions/new.html.erb",
@@ -568,8 +645,6 @@
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/initializers/inflections.rb",
 		"/home/javier/Projects/OpenWolf/OpenwolfV4/Gemfile",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/locales/devise.es.yml",
-		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/models/usuario.rb",
-		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/application.rb",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/assets/stylesheets/home.css.scss",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/vendor/assets/stylesheets/chosen.css",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/vendor/assets/stylesheets/elfinder.min.css",
@@ -585,7 +660,6 @@
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/vendor/assets/stylesheets/uniform.default.css",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/vendor/assets/stylesheets/uploadify.css",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/locales/devise.en.yml",
-		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/locales/es.yml",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/environments/development.rb",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/views/home/index.html.haml",
 		"/home/javier/Projects/OpenWolf/AdminOpenwolf/config/environments/production.rb",
@@ -609,46 +683,7 @@
 		"/home/javier/Downloads/vpn-29b55440 (1).txt",
 		"/home/javier/Desktop/bluekite_pronet_staging_vpn.txt",
 		"/home/javier/Documents/Diciembre/vpn_staging_pronet.txt",
-		"/home/javier/.cache/.fr-wsXFJ1/Matts Conky/Read Me",
-		"/home/javier/Downloads/Matts Conky/Read Me",
-		"/home/javier/Downloads/Matts Conky/.conky.sh",
-		"/home/javier/Downloads/vpn-5db25334 (1).txt",
-		"/home/javier/Desktop/vpn_staging_pronet.txt",
-		"/home/javier/Downloads/vpn-4bb55422 (1).txt",
-		"/home/javier/Downloads/vpn-29b55440.txt",
-		"/home/javier/Downloads/vpn-c0b352a9.txt",
-		"/home/javier/Downloads/vpn-c0b352a9 (2).txt",
-		"/home/javier/Desktop/vpn-c0b352a9 (1).txt",
-		"/home/javier/Downloads/vpn-5db25334.txt",
-		"/home/javier/Downloads/vpn-44b2532d.txt",
-		"/home/javier/Downloads/vpn-c0b352a9 (5).txt",
-		"/home/javier/Desktop/cisco.txt",
-		"/home/javier/Desktop/generic.txt",
-		"/home/javier/Downloads/vpn-a9ae4fc0 (3).txt",
-		"/home/javier/Downloads/vpn-a9ae4fc0 (2).txt",
-		"/home/javier/Downloads/vpn-a9ae4fc0 (1).txt",
-		"/home/javier/Downloads/vpn-a9ae4fc0.txt",
-		"/home/javier/Downloads/2012-11-20_public_api.sql",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/config/initializers/inflections.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/app/models/encuesta.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/app/models/pregunta.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/app/controllers/preguntas_controller.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/app/controllers/encuestas_controller.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/config/routes.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/Gemfile",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/spec/factories.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/spec/factories/encuestas.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/spec/factories/preguntas.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/spec/requests/admnistracion_de_rutas_spec.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/spec/factories/pregunta.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/app/models/ruta.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/spec/support/autenticacion.rb",
-		"/home/javier/Projects/CursoRails/curso-rails-rspec/db/seeds.rb",
-		"/home/javier/Projects/CursoRails/encuenstas/config/initializers/inflections.rb",
-		"/home/javier/Projects/CursoRails/encuenstas/app/views/dashboard/show.html.erb",
-		"/home/javier/Projects/CursoRails/encuenstas/spec/support/encuestas.rb",
-		"/home/javier/Projects/CursoRails/encuenstas/Gemfile",
-		"/home/javier/Projects/CursoRails/encuenstas/spec/spec_helper.rb"
+		"/home/javier/.cache/.fr-wsXFJ1/Matts Conky/Read Me"
 	],
 	"find":
 	{
@@ -656,7 +691,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"/home/javier/Projects/OpenWolf/AdminOpenwolf/app/controllers",
@@ -695,6 +730,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"form",
+			"hide",
+			"admin_",
+			"form",
 			"admin_",
 			"Admin::",
 			"../img/",
@@ -818,11 +857,7 @@
 			"busquedas",
 			"busque",
 			"profesions",
-			"archivos_path",
-			"Archivos",
-			"razonestiposresoluciones_path",
-			"documentocate",
-			"documentocla"
+			"archivos_path"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -830,6 +865,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"f",
+			"",
+			"f",
 			"",
 			"\n",
 			"ruta",
@@ -922,33 +960,32 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/usuarios/index.html.haml",
+					"file": "app/controllers/instituciones_controller.rb",
 					"settings":
 					{
-						"buffer_size": 1380,
+						"buffer_size": 390,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								374,
-								374
+								56,
+								56
 							]
 						],
 						"settings":
 						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
+						"translation.x": 67.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -956,56 +993,22 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/assets/stylesheets/application.css",
+					"file": "app/views/instituciones/index.html.haml",
 					"settings":
 					{
-						"buffer_size": 640,
+						"buffer_size": 1240,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								635,
-								635
+								143,
+								143
 							]
 						],
 						"settings":
 						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
-				{
-					"buffer": 2,
-					"file": "/home/javier/Projects/OpenWolf/OpenwolfV4/app/views/admin/usuarios/index.html.haml",
-					"settings":
-					{
-						"buffer_size": 1007,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								616,
-								616
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
 							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1017,25 +1020,23 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/home/javier/Projects/OpenWolf/OpenwolfV4/app/helpers/application_helper.rb",
+					"buffer": 2,
+					"file": "app/controllers/usuarios_controller.rb",
 					"settings":
 					{
-						"buffer_size": 7151,
+						"buffer_size": 520,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4877,
-								4877
+								386,
+								386
 							]
 						],
 						"settings":
 						{
-							"in_converting": true,
-							"origin_encoding": "GBK",
 							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1047,25 +1048,82 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/views/layouts/application.html.haml",
+					"buffer": 3,
+					"file": "app/views/instituciones/edit.html.haml",
 					"settings":
 					{
-						"buffer_size": 784,
+						"buffer_size": 183,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								416,
-								416
+								183,
+								183
 							]
 						],
 						"settings":
 						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/instituciones/_form.html.haml",
+					"settings":
+					{
+						"buffer_size": 889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "app/views/usuarios/index.html.haml",
+					"settings":
+					{
+						"buffer_size": 1649,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68,
+								68
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1076,25 +1134,52 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/assets/stylesheets/usuarios.css.scss",
+					"buffer": 6,
+					"file": "app/views/usuarios/new.html.haml",
 					"settings":
 					{
-						"buffer_size": 91,
+						"buffer_size": 165,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								91,
-								91
+								165,
+								165
 							]
 						],
 						"settings":
 						{
-							"auto_name": "usuarios.css.scss",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/shared/_index.html.haml",
+					"settings":
+					{
+						"buffer_size": 604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								604,
+								604
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1162,6 +1247,182 @@
 		"selected_items":
 		[
 			[
+				"_inde",
+				"app/views/shared/_index.html.haml"
+			],
+			[
+				"es.",
+				"config/locales/es.yml"
+			],
+			[
+				"glo",
+				"app/assets/stylesheets/global.css.scss"
+			],
+			[
+				"usuariocss",
+				"app/assets/stylesheets/usuarios.css.scss"
+			],
+			[
+				"usuafor",
+				"app/views/usuarios/_form.html.haml"
+			],
+			[
+				"insform",
+				"app/views/instituciones/_form.html.haml"
+			],
+			[
+				"insnew",
+				"app/views/instituciones/new.html.haml"
+			],
+			[
+				"usuarnew",
+				"app/views/usuarios/new.html.haml"
+			],
+			[
+				"_in",
+				"app/views/shared/_index.html.haml"
+			],
+			[
+				"usuariocs",
+				"app/assets/stylesheets/usuarios.css.scss"
+			],
+			[
+				"usuarcss",
+				"app/assets/stylesheets/usuarios.css.scss"
+			],
+			[
+				"global",
+				"app/assets/stylesheets/global.css.scss"
+			],
+			[
+				"usuarios",
+				"app/assets/stylesheets/usuarios.css.scss"
+			],
+			[
+				"usuacss",
+				"app/assets/stylesheets/usuarios.css.scss"
+			],
+			[
+				"usuariosc",
+				"app/controllers/usuarios_controller.rb"
+			],
+			[
+				"user",
+				"db/migrate/20121215062024_drop_roles_usuarios_table.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"usurol",
+				"db/migrate/20121215062024_drop_roles_usuarios_table.rb"
+			],
+			[
+				"usuarioin",
+				"app/views/usuarios/index.html.haml"
+			],
+			[
+				"usuarioscon",
+				"app/controllers/usuarios_controller.rb"
+			],
+			[
+				"alert",
+				"app/views/shared/_alert_messages.html.haml"
+			],
+			[
+				"aplication.",
+				"app/views/layouts/application.html.haml"
+			],
+			[
+				"usua",
+				"app/models/usuario.rb"
+			],
+			[
+				"usu",
+				"app/models/usuario.rb"
+			],
+			[
+				"fuen",
+				"app/models/fuente.rb"
+			],
+			[
+				"acti",
+				"app/models/actividad.rb"
+			],
+			[
+				"soli",
+				"app/models/solicitud.rb"
+			],
+			[
+				"tipom",
+				"app/controllers/tipomensajes_controller.rb"
+			],
+			[
+				"ins",
+				"app/models/institucion.rb"
+			],
+			[
+				"insti",
+				"lib/openwolf/openwolf/core/institucion.rb"
+			],
+			[
+				"openwolf.rb",
+				"lib/openwolf/openwolf.rb"
+			],
+			[
+				"refe",
+				"lib/openwolf/referential_integrity.rb"
+			],
+			[
+				"apli",
+				"config/application.rb"
+			],
+			[
+				"ap",
+				"config/application.rb"
+			],
+			[
+				"appli",
+				"config/application.rb"
+			],
+			[
+				"new",
+				"app/views/usuarios/new.html.haml"
+			],
+			[
+				"edi",
+				"app/views/usuarios/edit.html.haml"
+			],
+			[
+				"usuain",
+				"app/views/usuarios/index.html.haml"
+			],
+			[
+				"usuari",
+				"app/models/usuario.rb"
+			],
+			[
+				"role",
+				"app/models/role.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"aplicahel",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"side",
+				"app/views/shared/_sidebar.html.haml"
+			],
+			[
+				"index",
+				"app/views/usuarios/index.html.haml"
+			],
+			[
 				"applicss",
 				"app/assets/stylesheets/application.css"
 			],
@@ -1190,28 +1451,12 @@
 				"app/controllers/usuarios_controller.rb"
 			],
 			[
-				"rou",
-				"config/routes.rb"
-			],
-			[
-				"side",
-				"app/views/shared/_sidebar.html.haml"
-			],
-			[
 				"help",
 				"app/helpers/application_helper.rb"
 			],
 			[
 				"appcon",
 				"app/controllers/application_controller.rb"
-			],
-			[
-				"gem",
-				"Gemfile"
-			],
-			[
-				"es.",
-				"config/locales/views/defaults/es.yml"
 			],
 			[
 				"infle",
@@ -1230,16 +1475,8 @@
 				"app/assets/stylesheets/application.css"
 			],
 			[
-				"apli",
-				"config/application.rb"
-			],
-			[
 				"devi",
 				"config/locales/devise.en.yml"
-			],
-			[
-				"appli",
-				"app/views/layouts/application.html.erb"
 			],
 			[
 				"app",
@@ -1260,10 +1497,6 @@
 			[
 				"home",
 				"app/controllers/home_controller.rb"
-			],
-			[
-				"usua",
-				"app/models/usuario.rb"
 			],
 			[
 				"produ",
@@ -1374,10 +1607,6 @@
 				"spec/support/autenticacion.rb"
 			],
 			[
-				"edi",
-				"app/views/admin/rutas/edit.html.erb"
-			],
-			[
 				"rspec",
 				"spec/models/ruta_spec.rb"
 			],
@@ -1396,10 +1625,6 @@
 			[
 				"form",
 				"app/views/admin/encuestas/_form.html.erb"
-			],
-			[
-				"new",
-				"app/views/admin/encuestas/new.html.erb"
 			],
 			[
 				"dash",
@@ -1458,16 +1683,8 @@
 				"app/controllers/dashboard_controller.rb"
 			],
 			[
-				"usu",
-				"app/models/usuario.rb"
-			],
-			[
 				"dashboard/",
 				"app/views/dashboard/show.html.erb"
-			],
-			[
-				"user",
-				"spec/models/usuario_spec.rb"
 			],
 			[
 				"homespe",
@@ -1540,138 +1757,6 @@
 			[
 				"fac",
 				"spec/factories.rb"
-			],
-			[
-				"notasp",
-				"spec/models/nota_spec.rb"
-			],
-			[
-				"nota.",
-				"app/models/nota.rb"
-			],
-			[
-				"rango",
-				"spec/models/rangoedad_spec.rb"
-			],
-			[
-				"ran",
-				"app/models/rangoedad.rb"
-			],
-			[
-				"facto",
-				"spec/factories.rb"
-			],
-			[
-				"archivospe",
-				"spec/models/archivo_spec.rb"
-			],
-			[
-				"archivo.r",
-				"app/models/archivo.rb"
-			],
-			[
-				"via",
-				"spec/models/via_spec.rb"
-			],
-			[
-				"depar",
-				"spec/models/departamento_spec.rb"
-			],
-			[
-				"depa",
-				"app/models/departamento.rb"
-			],
-			[
-				"cla",
-				"spec/models/clasificacion_spec.rb"
-			],
-			[
-				"documentocategospe",
-				"spec/models/documentocategoria_spec.rb"
-			],
-			[
-				"documento",
-				"app/models/documentocategoria.rb"
-			],
-			[
-				"razontip",
-				"spec/models/razontiporesolucion_spec.rb"
-			],
-			[
-				"razon",
-				"app/models/razontiporesolucion.rb"
-			],
-			[
-				"fuen",
-				"app/models/fuente.rb"
-			],
-			[
-				"muni",
-				"spec/models/municipio_spec.rb"
-			],
-			[
-				"senti",
-				"spec/models/sentidoresolucion_spec.rb"
-			],
-			[
-				"sen",
-				"app/models/sentidoresolucion.rb"
-			],
-			[
-				"tipore",
-				"spec/models/tiporesolucion_spec.rb"
-			],
-			[
-				"speche",
-				"spec/spec_helper.rb"
-			],
-			[
-				"puesto",
-				"spec/models/puesto_spec.rb"
-			],
-			[
-				"estadistica",
-				"lib/openwolf/openwolf/laip/estadistica.rb"
-			],
-			[
-				"libsoli",
-				"lib/openwolf/openwolf/laip/solicitud.rb"
-			],
-			[
-				"coreins",
-				"lib/openwolf/openwolf/core/institucion.rb"
-			],
-			[
-				"ins",
-				"app/models/institucion.rb"
-			],
-			[
-				"solici",
-				"app/models/solicitud.rb"
-			],
-			[
-				"laipsoli",
-				"lib/openwolf/openwolf/laip/solicitud.rb"
-			],
-			[
-				"inst",
-				"spec/models/institucion_spec.rb"
-			],
-			[
-				"feriadospe",
-				"spec/models/feriado_spec.rb"
-			],
-			[
-				"estadospe",
-				"spec/models/estado_spec.rb"
-			],
-			[
-				"documentospec",
-				"spec/models/documentocategoria_spec.rb"
-			],
-			[
-				"documentosp",
-				"spec/models/documento_spec.rb"
 			]
 		],
 		"width": 0.0
@@ -1691,7 +1776,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 300.0,
 	"status_bar_visible": true
 }

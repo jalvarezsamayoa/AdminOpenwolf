@@ -3,8 +3,17 @@ class UsuariosController <  InheritedResources::Base
 
   add_crumb("Usuarios") { |instance| instance.send :usuarios_path }
 
+  def update
+    if params[:usuario][:password].nil? or params[:usuario][:password].empty?
+      params[:usuario].delete(:password)
+      params[:usuario].delete(:password_confirmation)
+    end
+    update!
+  end
+
   protected
   def collection
-    @usuarios ||= end_of_association_chain.page(params[:page])
+  	@q = Usuario.includes(:institucion).search(params[:q])
+    @usuarios ||= @q.result.page(params[:page])
   end
 end

@@ -1,0 +1,32 @@
+- content_for :form_filter do
+  = form_filter(:q => @q) do |f|
+    = f.text_field :codigo_cont, :placeholder => "Código Contiene"
+    = f.select :activa_eq, options_for_select([['Inactivo',false], ['Activo',true]]), :include_blank => 'Todos'
+
+= render(:layout => 'shared/index', :locals=>{:title => "Instituciones", :new_item_url => new_institucion_path}) do
+  %table.table.table-striped
+    %thead
+      %tr
+        %th ID
+        %th= Institucion.human_attribute_name(:nombre)
+        %th= 'Activa'
+        %th= Institucion.human_attribute_name(:codigo)
+        %th= Institucion.human_attribute_name(:unidad_ejecutora)
+        %th= Institucion.human_attribute_name(:entidad)
+        %th= Institucion.human_attribute_name(:parent_id)
+        %th Acciones
+    %tbody
+      - @instituciones.each do |institucion|
+        %tr{:class => "#{ 'inactive' unless institucion.activa? }"}
+          %td= institucion.id
+          %td= institucion.nombre.strip
+          %td= institucion.activa? ? 'Si' : 'No'
+          %td= institucion.codigo
+          %td= institucion.unidad_ejecutora
+          %td= institucion.entidad
+
+          %td= institucion.parent.nil? ? '' : institucion.parent.nombre.strip
+          %td.center.actions
+            = link_to(institucion_path(institucion), :class => "btn btn-success") do
+              %i.icon-zoom-in.icon-white
+  = paginate @instituciones

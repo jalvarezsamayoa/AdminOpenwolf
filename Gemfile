@@ -34,6 +34,7 @@ gem 'kaminari' # pagineo de resultados
 gem 'jquery-rails' #jquery para rails, remplaza prototype y scriptaculous
 gem 'paperclip' # modulo para hacer upload a archivos
 gem "crummy", "~> 1.6.0" # manejo de breadcrumbs
+gem "ransack" #busqueda de registros
 
 
 # Twitter Bootstrap
