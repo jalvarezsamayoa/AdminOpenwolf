@@ -1,0 +1,13 @@
+/ _show.html.haml
+.row-fluid
+  .box.span12
+    .box-header
+      %h2
+        %i.icon-info-sign
+        %span.break
+        = item.class.model_name.human
+    .box-content
+      .row-fluid
+        .span12.toolbar
+          = buttons_toolbar(item)
+      = yield

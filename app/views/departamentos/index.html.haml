@@ -1,0 +1,18 @@
+= render(:layout => 'shared/index', :locals=>{:title => "Departamento", :new_item_url => new_departamento_path}) do
+  %table.table.table-striped
+    %thead
+      %tr
+        %th ID
+        %th= Departamento.human_attribute_name(:nombre)
+        %th= Departamento.human_attribute_name(:abreviatura)
+        %th Acciones
+    %tbody
+      - for departamento in @departamentos  do
+        %tr
+          %td= departamento.id
+          %td= departamento.nombre
+          %td= departamento.abreviatura
+          %td.center.actions
+            = link_to departamento_path(departamento), :class => "btn btn-success" do
+              %i.icon-zoom-in.icon-white
+  = paginate @departamentos

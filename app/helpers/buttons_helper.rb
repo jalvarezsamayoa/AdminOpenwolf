@@ -1,6 +1,6 @@
 #encoding: utf-8
 module ButtonsHelper
-	
+
   def button(text = 'Grabar', icon = 'icon-ok')
     c_return = '<button type="submit" class="btn">'
     c_return += "<i class='#{icon} icon-white'></i> #{text}"
@@ -36,7 +36,7 @@ module ButtonsHelper
       end
     end
 
-    return raw(c_return)
+    return c_return
   end
 
   def button_new(url = "#", text = 'Nuevo')
@@ -77,5 +77,18 @@ module ButtonsHelper
 
   def buttons_update(url = "#")
     return button_update + button_cancel(url)
+  end
+
+  def buttons_toolbar(item)
+    instance_name = item.class.name.tableize.singularize
+    instance_plural_name = item.class.name.tableize
+    instance_path = instance_name + "_path(item)"
+    index_path = instance_plural_name + "_path"
+
+    buttons = button_new( eval("new_" + instance_name + "_path" ) )
+    buttons += button_edit( eval("edit_" + instance_path) )
+    buttons += button_delete( eval( instance_path ) )
+    buttons += button_cancel( eval( index_path ) )
+    buttons
   end
 end

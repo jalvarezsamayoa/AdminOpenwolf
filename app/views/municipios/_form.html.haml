@@ -1,0 +1,6 @@
+= simple_form_for municipio, html: { class: 'form-horizontal'} do |f|
+  = f.input :nombre
+  = f.association :departamento, :include_blank => false
+  .f-actions
+    = f.button :submit, :class => "btn btn-primary"
+    = link_to "Cancelar", municipios_path, :class => "btn"

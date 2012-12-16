@@ -1,0 +1,9 @@
+/ show.html.haml
+= render(:layout => 'shared/show', :locals=>{:item => @departamento}) do
+  %table.table.table-bordered
+    %tr
+      %th= label :nombre, Departamento.human_attribute_name(:nombre)
+      %td= @departamento.nombre
+    %tr
+      %th= label :abreviatura, Departamento.human_attribute_name(:abreviatura)
+      %td= @departamento.abreviatura

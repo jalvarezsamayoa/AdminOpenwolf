@@ -1,0 +1,9 @@
+/ show.html.haml
+= render(:layout => 'shared/show', :locals=>{:item => @municipio}) do
+  %table.table.table-bordered
+    %tr
+      %th= Municipio.human_attribute_name(:nombre)
+      %td= @municipio.nombre
+    %tr
+      %th= Municipio.human_attribute_name(:departamento_id)
+      %td= @municipio.departamento.nombre

@@ -1,0 +1,22 @@
+- content_for :form_filter do
+  = form_filter(:q => @q) do |f|
+    = f.select :departamento_id_eq, options_from_collection_for_select(Departamento.all, :id, :nombre), :include_blank => 'Todos los Departamentos'
+
+= render(:layout => 'shared/index', :locals=>{:title => "Municipio", :new_item_url => new_municipio_path}) do
+  %table.table.table-striped
+    %thead
+      %tr
+        %th ID
+        %th= Municipio.human_attribute_name(:nombre)
+        %th= Municipio.human_attribute_name(:departamento_id)
+        %th Acciones
+    %tbody
+      - @municipios.each do |municipio|
+        %tr
+          %td= municipio.id
+          %td= municipio.nombre
+          %td= municipio.departamento.nombre
+          %td.center.actions
+            = link_to municipio_path(municipio), :class => "btn btn-success" do
+              %i.icon-zoom-in.icon-white
+  = paginate @municipios
